@@ -1,4 +1,4 @@
-package com.bohemian.android_jetpack_boilerplate.enum
+package com.bohemian.android_jetpack_boilerplate.enums
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes

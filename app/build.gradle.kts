@@ -9,11 +9,11 @@ plugins {
 android {
     val config = libs.versions
 
-    namespace = config.namespace.toString()
+//    namespace = config.namespace.toString()
     compileSdk = config.compileSdk.get().toInt()
 
     defaultConfig {
-        applicationId = config.applicationId.toString()
+        applicationId = "com.bohemian.android_jetpack_boilerplate"
         minSdk = config.minSdk.get().toInt()
         targetSdk = config.targetSdk.get().toInt()
         versionCode = config.versionCode.get().toInt()
@@ -67,7 +67,7 @@ dependencies {
     implementation(libs.androidx.work.runtime.ktx)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
-    implementation(libs.androidx.navigation.ui.ktx)
+    implementation(libs.androidx.navigation.compose)
     implementation(libs.gson)
     implementation(libs.glide)
     testImplementation(libs.junit)
